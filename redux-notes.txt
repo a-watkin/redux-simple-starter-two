@@ -12,3 +12,7 @@ Container (sometimes called a smart component)
 
     a react component that has a direct link to the state managed by redux
 
+
+    What should be a container?
+
+        the highest level component that cares about a particular piece of state - data flows down fromt here, ask what the most senior component is that cares about that piece of state
