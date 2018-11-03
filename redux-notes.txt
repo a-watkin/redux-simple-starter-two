@@ -16,3 +16,12 @@ Container (sometimes called a smart component)
     What should be a container?
 
         the highest level component that cares about a particular piece of state - data flows down fromt here, ask what the most senior component is that cares about that piece of state
+
+
+Action creator:
+
+    just a function that returns an action
+
+    and an action is just an object that flows through the reducers which can use it's value to produce a different state
+
+
