@@ -1,0 +1,12 @@
+Application state is a plain JS object
+
+Reducer
+
+    a function that returns a piece of the application state
+
+    an application can have many reducers
+
+
+
+
+
