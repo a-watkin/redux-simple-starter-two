@@ -8,5 +8,7 @@ Reducer
 
 
 
+Container (sometimes called a smart component)
 
+    a react component that has a direct link to the state managed by redux
 
