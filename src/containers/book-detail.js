@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 
 class BookDetail extends Component {
   render() {
-    if (!this.props.books) {
+    if (!this.props.book) {
       return (
         <div>
           <h4>Select a book to get started.</h4>
@@ -13,8 +13,10 @@ class BookDetail extends Component {
 
     return (
       <div>
-        <h3>Detail for: </h3>
-        <div>{this.props.title}</div>
+        <h3>
+          Detail for:
+          <div>{this.props.book.title}</div>{" "}
+        </h3>
         Book detail
       </div>
     );

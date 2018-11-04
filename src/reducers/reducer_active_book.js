@@ -9,6 +9,7 @@ export default function(state = null, action) {
   // so only change state if the correct case is called
   switch (action.type) {
     case "BOOK_SELECTED":
+      console.log("here?", state, action);
       return action.payload;
   }
 
