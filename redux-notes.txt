@@ -25,3 +25,4 @@ Action creator:
     and an action is just an object that flows through the reducers which can use it's value to produce a different state
 
 
+Component state is different from application state that is managed by redux
