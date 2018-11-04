@@ -6,6 +6,7 @@ Reducer
 
     an application can have many reducers
 
+    manages changing state over time via actions
 
 
 Container (sometimes called a smart component)
@@ -19,6 +20,10 @@ Container (sometimes called a smart component)
 
 
 Action creator:
+
+    actions must always have a type
+
+    they usually have a payload
 
     just a function that returns an action
 
