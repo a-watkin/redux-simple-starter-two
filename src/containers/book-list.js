@@ -2,14 +2,19 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { selectBook } from "../actions/index";
-// ensures the actuion flows through all the reducers
+// ensures the action flows through all the reducers
 import { bindActionCreators } from "redux";
 
+// so the confusing part really is that state from reducer_books is avaialbe here via redux
 class BookList extends Component {
   renderList() {
     return this.props.books.map(book => {
       return (
-        <li key={book.title} className="list-group-item">
+        <li
+          key={book.title}
+          className="list-group-item"
+          onClick={() => this.props.selectBook(book)}
+        >
           {book.title}
         </li>
       );
